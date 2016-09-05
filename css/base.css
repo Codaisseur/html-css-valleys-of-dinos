@@ -1,0 +1,150 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  color: #004e66;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: 13px;
+}
+h2,
+h3,
+a {
+  color: #004e66;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+hr {
+  color: white;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: .95em;
+  color: #D81159;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #004e66;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .35em;
+  padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: white;
+  background: #D81159;
+  padding: 3em 0;
+  margin-bottom: 50px;
+}
+.main-footer {
+  background: #d9e1e8;
+  padding: 1em 0;
+  margin-top: 50px;
+}
+.valleys-content,
+.valley-content {
+  margin: 0 auto;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 132px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #004e66;
+  margin-bottom: 20px;
+}
+.headline {
+  margin-bottom: 0;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header,
+  .valleys-content,
+  .valley-content,
+  .footer-inner{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+
+}
+
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}

@@ -1,0 +1,68 @@
+/* =================================
+  Valleys
+==================================== */
+
+.valley-card {
+  background-color: #d9e1e8;
+  margin: 30px 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.valley-img {
+  height: 160px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #004e66;
+  margin-bottom: 20px;
+}
+
+.valley-button {
+  background-color: #D81159;
+  font-size: 13px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.valley-button:hover {
+  background-color: #004e66;
+}
+
+/* ---- Flexbox ---- */
+
+.valleys-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.valleys-content {
+  flex: 1;
+}
+
+.valley-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 30%;
+}
+
+.valley-button {
+  margin-top: auto;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .valley-card {
+    margin: 10px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+}
