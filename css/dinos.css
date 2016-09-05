@@ -1,0 +1,103 @@
+/* =================================
+  Valley
+==================================== */
+
+.dino-card {
+  background-color: #d9e1e8;
+  margin: 30px 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.dino-avatar {
+  max-width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #004e66;
+  margin-right: 40px;
+}
+
+.dino-name {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.dino-button {
+  background-color: #D81159;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.dino-button:hover {
+  background-color: #004e66;
+}
+
+.dino-card-footer {
+  border-top: 2px solid #004e66;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.food-item {
+  display: inline-block;
+  margin-right: 15px;
+  color: #D81159;
+}
+
+/* ---- Flexbox ---- */
+
+.valley-content {
+  flex-direction: column;
+  flex: 1;
+}
+
+.dino-card {
+  display: flex;
+}
+
+.dino-avatar {
+  flex: 1;
+}
+
+.dino-info {
+  flex: 2;
+}
+
+.dino-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.dino-card-footer {
+  justify-content: space-in-between;
+}
+
+.dino-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dino-button {
+  margin-left: auto;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .dino-card {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+}
